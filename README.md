@@ -1,7 +1,7 @@
 # Meus Exercicios do 'Curso Em Video' em Html, CSS e JavaScript
  Exercicios de Html, CSS e JavaScript do 'Curso Em Video' realizados por Guilherme Datti.
 
-~~~
+
 PT:
 
 Repositório criado para compartilhar meus exercícios do Curso em Vídeo e um pouco do meu progresso nesse universo chamado tecnologia. Como um "bom" iniciante cometi o erro de não versionar meus projetos e acabei perdendo os exercícios anteriores...
