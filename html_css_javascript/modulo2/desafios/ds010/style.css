@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+header {
+    background-image: linear-gradient(to bottom, #3BD27F, #1A5C38);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.336);
+}
+
+header > h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 15px;
+}
+
+header > p {
+    text-align: center;
+    padding: 15px;
+    color: lightgray;
+}
+
+header > nav > p > a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+body {
+    background-color: #84E1AD;
+    margin: 0%;
+}
