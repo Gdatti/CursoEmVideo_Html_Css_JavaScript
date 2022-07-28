@@ -9,11 +9,32 @@
         table {
             font-family: Arial, Helvetica, sans-serif;
             border-collapse: collapse;
+            width: 500px;
+            position: relative;
+        }
+
+        caption {
+            background-color: lightgray;
+            padding: 10px;
+            border: 3px solid black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            color: darkorchid;
         }
 
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: cyan;
         }
 
         td, th {
@@ -29,10 +50,11 @@
 <body>
     <h1>Tabelas mais completas</h1>
     <table>
+        <caption>Tabela de população por Unidade Federativa</caption>
         <thead>
             <tr>
-                <th>Unidade Federativa</th>
-                <th>População</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -52,13 +74,27 @@
                 <td>Roraima</td>
                 <td class="num">450 479</td>
             </tr>
+            <tr>
+                <td>Campineira</td>
+                <td class="num">100 763</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <td class="num">00000</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consectetur dolorem provident voluptate laboriosam. Numquam, maxime. Veniam tempore at maxime perspiciatis, provident aliquid, dolores, dolorum voluptate ut optio officiis excepturi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus blanditiis consectetur amet rerum, quam deserunt reiciendis vitae atque perferendis, eveniet quia aliquam exercitationem modi magni. Esse suscipit dolor culpa cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veniam quod magni, error sunt, aut animi ipsa exercitationem, enim voluptatum fugiat. Sed optio repudiandae rerum officiis illo, laudantium illum veritatis!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consectetur dolorem provident voluptate laboriosam. Numquam, maxime. Veniam tempore at maxime perspiciatis, provident aliquid, dolores, dolorum voluptate ut optio officiis excepturi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus blanditiis consectetur amet rerum, quam deserunt reiciendis vitae atque perferendis, eveniet quia aliquam exercitationem modi magni. Esse suscipit dolor culpa cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veniam quod magni, error sunt, aut animi ipsa exercitationem, enim voluptatum fugiat. Sed optio repudiandae rerum officiis illo, laudantium illum veritatis!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consectetur dolorem provident voluptate laboriosam. Numquam, maxime. Veniam tempore at maxime perspiciatis, provident aliquid, dolores, dolorum voluptate ut optio officiis excepturi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus blanditiis consectetur amet rerum, quam deserunt reiciendis vitae atque perferendis, eveniet quia aliquam exercitationem modi magni. Esse suscipit dolor culpa cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veniam quod magni, error sunt, aut animi ipsa exercitationem, enim voluptatum fugiat. Sed optio repudiandae rerum officiis illo, laudantium illum veritatis!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consectetur dolorem provident voluptate laboriosam. Numquam, maxime. Veniam tempore at maxime perspiciatis, provident aliquid, dolores, dolorum voluptate ut optio officiis excepturi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus blanditiis consectetur amet rerum, quam deserunt reiciendis vitae atque perferendis, eveniet quia aliquam exercitationem modi magni. Esse suscipit dolor culpa cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veniam quod magni, error sunt, aut animi ipsa exercitationem, enim voluptatum fugiat. Sed optio repudiandae rerum officiis illo, laudantium illum veritatis!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consectetur dolorem provident voluptate laboriosam. Numquam, maxime. Veniam tempore at maxime perspiciatis, provident aliquid, dolores, dolorum voluptate ut optio officiis excepturi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus blanditiis consectetur amet rerum, quam deserunt reiciendis vitae atque perferendis, eveniet quia aliquam exercitationem modi magni. Esse suscipit dolor culpa cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veniam quod magni, error sunt, aut animi ipsa exercitationem, enim voluptatum fugiat. Sed optio repudiandae rerum officiis illo, laudantium illum veritatis!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consectetur dolorem provident voluptate laboriosam. Numquam, maxime. Veniam tempore at maxime perspiciatis, provident aliquid, dolores, dolorum voluptate ut optio officiis excepturi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus blanditiis consectetur amet rerum, quam deserunt reiciendis vitae atque perferendis, eveniet quia aliquam exercitationem modi magni. Esse suscipit dolor culpa cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veniam quod magni, error sunt, aut animi ipsa exercitationem, enim voluptatum fugiat. Sed optio repudiandae rerum officiis illo, laudantium illum veritatis!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consectetur dolorem provident voluptate laboriosam. Numquam, maxime. Veniam tempore at maxime perspiciatis, provident aliquid, dolores, dolorum voluptate ut optio officiis excepturi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus blanditiis consectetur amet rerum, quam deserunt reiciendis vitae atque perferendis, eveniet quia aliquam exercitationem modi magni. Esse suscipit dolor culpa cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veniam quod magni, error sunt, aut animi ipsa exercitationem, enim voluptatum fugiat. Sed optio repudiandae rerum officiis illo, laudantium illum veritatis!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque consectetur dolorem provident voluptate laboriosam. Numquam, maxime. Veniam tempore at maxime perspiciatis, provident aliquid, dolores, dolorum voluptate ut optio officiis excepturi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus blanditiis consectetur amet rerum, quam deserunt reiciendis vitae atque perferendis, eveniet quia aliquam exercitationem modi magni. Esse suscipit dolor culpa cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veniam quod magni, error sunt, aut animi ipsa exercitationem, enim voluptatum fugiat. Sed optio repudiandae rerum officiis illo, laudantium illum veritatis!</p>
+
+
 </body>
 </html>
